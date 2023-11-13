@@ -1,0 +1,19 @@
+- type: entity
+  id: USMCRocketHE
+  name: high explosive rocket
+  parent: BaseItem
+  description: A warhead designed specially for the M5 RPG launcher.
+  components:
+  - type: Tag
+    tags:
+      - USMCRocket
+  - type: Item
+    size: Small
+  - type: CartridgeAmmo
+    proto: BulletRocket
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: _CM14/Objects/Weapons/Guns/Ammunition/Explosives/rockets.rsi
+    state: rocket
+  - type: StaticPrice
+    price: 20

@@ -1,0 +1,27 @@
+- type: entity
+  name: M5 RPG
+  parent: BaseWeaponLauncher
+  id: WeaponM5RPG
+  description: The M5 RPG is the primary anti-armor weapon of the USCM. Used to take out light-tanks and enemy structures, the M5 RPG is a dangerous weapon with a variety of combat uses.
+  components:
+  - type: Sprite
+    sprite: _CM14/Objects/Weapons/Guns/Launchers/m5rpg.rsi
+    layers:
+      - state: icon
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _CM14/Objects/Weapons/Guns/Launchers/m5rpg.rsi
+  - type: Gun
+    fireRate: 0.5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - USMCRocket
+    proto: USMCRocketHE
+    capacity: 1
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: Appearance
+  - type: Wieldable
